@@ -1,0 +1,9 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    min-width: 20vw;
+    background-image: no-repeat url('assets/10-barrel-brewing.jpg');
+}
