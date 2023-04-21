@@ -1,9 +1,17 @@
-.content {
+.body {
     width: 100vw;
     height: 100vh;
 }
 
-.logo {
-    min-width: 20vw;
-    background-image: no-repeat url('assets/10-barrel-brewing.jpg');
+nav {
+    /* Menu Bar */
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav > span {
+    /*Menu Bar Items*/
+    border: 1px solid black;
+    border-radius: 10px;
 }

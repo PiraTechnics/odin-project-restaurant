@@ -1,3 +1,5 @@
+import img from './10-barrel-brewing.jpg';
+
 export default function loadLanding() {
 
     const container = document.querySelector('#content');
@@ -5,9 +7,10 @@ export default function loadLanding() {
     const header = document.createElement('header');
     const headerText = document.createElement('h1');
     headerText.innerText = '10 Barrel Brewing';
-    const headerImg = document.createElement('img');
-    headerImg.setAttribute("src", "10-barrel-brewing.jpg");
-    headerImg.setAttribute("width", "500px");
+    
+    const headerImg = new Image(500); //constructs new image with a 500px width
+    headerImg.src = img;
+
     header.append(headerText, headerImg);
     container.appendChild(header);
     

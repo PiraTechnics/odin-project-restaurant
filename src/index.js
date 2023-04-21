@@ -1,33 +1,26 @@
 import loadLanding from "./landing";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import './style.css';
 
-//Menu Tabs
-const navMenu = document.createElement('nav');
+//Bootstrap CSS import
+import './scss/styles.scss';
 
-const landingTab = document.createElement('span');
-landingTab.innerHTML = " Home /";
-landingTab.addEventListener('click', () => {
+//Menu Tab Listeners
+document.querySelector('#homeTab').addEventListener('click', function() {
     wipeTab();
     loadLanding();
 });
 
-const menuTab = document.createElement('span');
-menuTab.innerHTML = " Menu /";
-menuTab.addEventListener('click', () => {
+document.querySelector('#menuTab').addEventListener('click', function() {
     wipeTab();
     loadMenu();
 });
 
-const contactTab = document.createElement('span');
-contactTab.innerHTML = " Contact /";
-contactTab.addEventListener('click', () => {
+document.querySelector('#contactTab').addEventListener('click', function() {
     wipeTab();
     loadContact();
 });
-
-navMenu.append(landingTab, menuTab, contactTab);
-document.body.prepend(navMenu);
 
 //Landing page is set by default
 loadLanding();
