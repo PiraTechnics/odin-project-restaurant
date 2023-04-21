@@ -1,7 +1,13 @@
 # odin-project-restaurant
 
-To run:
-1. navigate to project directory
+Setup:
+1. Navigate to project directory
 2. npm install
-3. npx webpack
-4. Profit!
+
+To Run Dev build:
+1. npm start
+
+To Build:
+1. npm run build
+
+See package.json for details
