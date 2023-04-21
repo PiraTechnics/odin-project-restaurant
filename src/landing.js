@@ -1,4 +1,4 @@
-function loadPage() {
+export default function loadLanding() {
 
     const container = document.querySelector('#content');
 
@@ -37,5 +37,3 @@ function loadPage() {
     container.appendChild(testimonials);
 
 }
-
-export default loadPage;
